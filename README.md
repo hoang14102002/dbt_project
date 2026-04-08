@@ -19,20 +19,27 @@ The goal is to practice transforming raw data into clean, analytical-ready table
 
 ## Project Structure
 dbt_project/
+
 ├── models/ # Transformation models (tables/views)
+
 ├── tests/ # Data tests
+
 ├── macros/ # Reusable macros
+
 ├── snapshots/ # Data snapshots (if any)
+
 ├── dbt_project.yml
+
 └── README.md
 
 ## How to use
-1. Clone the repository:
 ```bash
+1. Clone the repository:
 git clone https://github.com/hoang14102002/dbt_project.git
 cd dbt_project
 
 2. Install dbt (if not installed):
+Install dbt (if not installed):
 pip install dbt-sqlserver
 
 3. Configure your profiles.yml to connect to SQL Server:
