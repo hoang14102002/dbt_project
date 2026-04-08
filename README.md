@@ -13,9 +13,9 @@ The goal is to practice transforming raw data into clean, analytical-ready table
 
 ## Goals
 
-Learn and practice dbt with SQL Server.
-Build maintainable, production-ready data pipelines.
-Implement dbt concepts like models, tests, snapshots, and macros.
+- Learn and practice dbt with SQL Server.
+- Build maintainable, production-ready data pipelines.
+- Implement dbt concepts like models, tests, snapshots, and macros.
 
 ## Project Structure
 dbt_project/
