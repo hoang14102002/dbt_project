@@ -1,0 +1,92 @@
+version: 2
+
+sources:
+  - name: raw
+    database: olist_prj
+    schema: dbo
+    tables:
+      - name: olist_customers_dataset
+      - name: olist_orders_dataset
+      - name: olist_order_items_dataset
+      - name: olist_order_payments_dataset
+      - name: olist_order_reviews_dataset
+      - name: olist_products_dataset
+      - name: olist_sellers_dataset
+      - name: olist_geolocation_dataset
+      - name: product_category_name_translation
+
+models:
+  - name: stg_customers
+    description: "Staging table for customers"
+    columns:
+      - name: customer_id
+        description: "Primary key"
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_orders
+    description: "Staging table for orders"
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_order_items
+    description: "Staging table for order items"
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+  
+  - name: stg_order_payments
+    description: "Staging table for order payments"
+    columns:
+      - name: order_id
+        description: "Primary key"
+        tests:
+          - not_null
+  
+  - name: stg_order_reviews
+    description: "Staging table for order reviews"
+    columns:
+      - name: review_id
+        description: "Primary key"
+        tests:
+          - not_null
+
+  - name: stg_products
+    description: "Staging table for products"
+    columns:
+      - name: product_id
+        description: "Primary key"
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_sellers
+    description: "Staging table for sellers"
+    columns:
+      - name: seller_id
+        description: "Primary key"
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_geolocation
+    description: "Staging table for geolocations"
+    columns:
+      - name: geolocation_state
+        description: "Primary key"
+        tests:
+          - not_null
+
+  - name: stg_products_name_translate
+    description: "Staging table for products name translate"
+    columns:
+      - name: product_category_name
+        description: "Primary key"
+        tests:
+          - not_null
+          - unique
