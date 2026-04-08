@@ -11,6 +11,12 @@ The goal is to practice transforming raw data into clean, analytical-ready table
 - **SQL Server**: Main relational database.
 - **SQL**: Writing queries for data transformations in dbt models.
 
+## Goals
+
+Learn and practice dbt with SQL Server.
+Build maintainable, production-ready data pipelines.
+Implement dbt concepts like models, tests, snapshots, and macros.
+
 ## Project Structure
 dbt_project/
 ├── models/ # Transformation models (tables/views)
@@ -19,7 +25,6 @@ dbt_project/
 ├── snapshots/ # Data snapshots (if any)
 ├── dbt_project.yml
 └── README.md
-
 
 ## How to use
 1. Clone the repository:
@@ -48,8 +53,3 @@ dbt run            # Run models
 dbt test           # Run tests
 dbt docs generate  # Generate documentation
 dbt docs serve     # View documentation
-
-## goals
-Learn and practice dbt with SQL Server.
-Build maintainable, production-ready data pipelines.
-Implement dbt concepts like models, tests, snapshots, and macros.
