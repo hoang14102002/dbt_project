@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a **personal project** using **dbt (data build tool)** to build data pipelines on **SQL Server**.  
+This is a **personal project** using **dbt core** to build data pipelines on **SQL Server**.  
 The goal is to practice transforming raw data into clean, analytical-ready tables using dbt models and SQL.
 
 ## Technologies
