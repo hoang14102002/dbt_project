@@ -1,4 +1,4 @@
-## dbt_project
+## dbt_sqlserver_project
 
 ## Overview
 
